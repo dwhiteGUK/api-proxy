@@ -1,7 +1,7 @@
 const allowCors = fn => async (req, res) => {
   console.log('🚀 ~ file: proxy.js ~ line 4 ~ allowCors ~ req.headers.origin', req.headers.origin)
 
-  if (req.headers.origin !== undefined && !req.headers.origin.includes('d21mhytekt7r3f.amplifyapp.com') && !req.headers.origin.includes('http://localhost:')) {
+  if (req.headers.origin !== undefined && !req.headers.origin.includes('d1jsnt4exd9cns.amplifyapp.com') && !req.headers.origin.includes('http://localhost:')) {
     res.status(405).end()
     return
   }
